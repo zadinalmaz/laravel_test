@@ -7,7 +7,7 @@
     <div class="card text-bg-light mt-3" style="max-width: 18rem;">
         <div class="card-header">Name: {{ $author->name }}</div>
         <div class="card-body">
-            <h5 class="card-title">Books amount: {{ $author->books_amount }}</h5>
+            <li class="list-group-item">#Books amount: {{ $author->count }}</li>
         </div>
     </div>
 

@@ -19,7 +19,7 @@
                     <a href="{{ route('authors.show', $author) }}">{{$author->name}}</a>
                 </td>
                 <td>
-                    <a href="{{ route('authors.show', $author) }}"> {{ $author->count ?? 0 }}</a>
+                    <a style='text-decoration: none;' href="{{ route('authors.show', $author) }}">{{ $author->count }}</a>
                 </td>
                 <td>
                     <form method="POST" action="{{ route('authors.destroy', $author) }}">

@@ -16,7 +16,7 @@ class AuthorController extends Controller
     public function index()
     {
         $authors = Author::paginate(10);
-        foreach ($authors as $author) {
+        foreach($authors as $author) {
             $author['count'] = count($author->books);
         }
         return view('indexAuthor', compact('authors'));
